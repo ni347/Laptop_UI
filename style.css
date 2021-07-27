@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    margin: 2rem 3rem;
+    /* height: 10vh; */
+}
+.logo,.text,.cart{
+    display: flex;
+}
+
+.logo{
+    flex: 1;
+    margin: 5px;
+}
+.Three_dots{
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+nav{
+    flex: 0.5;
+    justify-content: flex-end;
+}
+.text{
+    font-size: 20px;
+    font-family: Poppins;
+    list-style: none;
+    justify-content: space-between;
+}
+.txt{
+    font-weight: 500;
+    font-family: Poppins;
+    color: #5f5f79;
+}
+
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction{
+    flex: 1;
+}
+
+.look h1{
+    font-size: 44px;
+    font-weight: 500;
+    font-family: Poppins;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.look p{
+    font-family: Poppins;
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+.button{
+    padding: 50px 0px 0px 0px;
+}
+
+.inch{
+    background-color: transparent;
+    color: #c36cbb;
+    font-size: 16px;
+    font-family: Poppins;
+    border-color: #c36cbb;
+    border: 2px solid;
+    width: 150px;
+    height: 50px;
+}
+.addto{
+    background-color: #c36cbb;
+    color: white;
+    font-size: 16px;
+    font-family: Poppins;
+    width: 150px;
+    height: 50px;
+    border: 2px solid;
+    border-color: #c36cbb;
+    margin: 30px 0 0 30px;
+}
+
+.laptop{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+.laptop img{
+    height: 100%;
+    filter: drop-shadow(0px 5px 3px black);
+    animation-name: drop;
+    animation-duration: 1s;
+}
+
+/* .look{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+
+.big{
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+    height: 80%;
+}
+
+.mid{
+    top: 30%;
+    right: 30%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    height: 60%;
+}
+
+.small{
+    bottom: 0%;
+    left: 20%;
+    position: absolute;
+    z-index: -1;
+}
+
+.laptop-select{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 20%;
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
